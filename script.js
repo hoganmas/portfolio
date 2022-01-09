@@ -26,4 +26,10 @@ $(document).ready(function () {
         $(this).find('ul.dropdown-menu').removeClass('show open');
     });
 
+    $('.botón').click(function (e) {
+        this.classList.toggle('active');
+        $('#iframe').toggle('active');
+    })
 });
+
+  
