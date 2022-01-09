@@ -3,19 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Hogan Mastanduno's Portfolio</title>
-    <script src="P1_Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "P1_Build/zelda_p1_gold_webgl.json");
-    </script>
+    <title>Hogan Mastanduno</title>
+
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>    
   </head>
   <body>
-      <h1>Hogan Mastanduno's Portfolio</h1>
-      <h2>EECS 494 Project 1: Legend of Zelda Recreation + Custom Level</h2>
-      
-    <div id="unityContainer" style="width: 512px; height: 480px; margin: auto"></div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Hogan Mastanduno's Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Major Projects</a></li>
+          <li><a href="#">Minor Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+         
+    <h2>EECS 494 Project 1: Legend of Zelda Recreation + Custom Level</h2>
+
+    <iframe src="./Fieldbender_WebGL/" title="Unity WebGL Player" style="width: 1024px; height: 768px"></iframe>
     
-      <h2>EECS 494 Project 2: <a href="./Fieldbender_WebGL/"> Fieldbender </a></h2>
-      <h2>EECS 494 Project 3: <a href="./FellsWargoWeb/"> Fells Wargo</a></h2>
+    <h2>EECS 494 Project 2: <a href="./Fieldbender_WebGL/"> Fieldbender </a></h2>
+    <h2>EECS 494 Project 3: <a href="./FellsWargoWeb/"> Fells Wargo</a></h2>
   </body>
 </html>
