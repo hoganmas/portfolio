@@ -1,21 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Hogan Mastanduno's Portfolio</title>
-    <script src="P1_Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "P1_Build/zelda_p1_gold_webgl.json");
-    </script>
-  </head>
-  <body>
-      <h1>Hogan Mastanduno's Portfolio</h1>
-      <h2>EECS 494 Project 1: Legend of Zelda Recreation + Custom Level</h2>
-      
-    <div id="unityContainer" style="width: 512px; height: 480px; margin: auto"></div>
-    
-      <h2>EECS 494 Project 2: <a href="./Fieldbender_WebGL/"> Fieldbender </a></h2>
-      <h2>EECS 494 Project 3: <a href="./FellsWargoWeb/"> Fells Wargo</a></h2>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Hogan Mastanduno</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+            <a class="navbar-brand" href="#">Hogan Mastanduno</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://fontenele.github.io/bootstrap-navbar-dropdowns/" target="_blank">Github</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bigger Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                            <li class="dropdown-item" href="#"><a>Action 1</a></li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
+                                    <li class="dropdown-item" href="#"><a>Action 1.1</a></li>
+                                    <li class="dropdown-item dropdown">
+                                        <a class="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
+                                            <li class="dropdown-item" href="#"><a>Action 1.1.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Smaller Projects</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                            <li class="dropdown-item" href="#"><a>Action 2 A</a></li>
+                            <li class="dropdown-item" href="#"><a>Action 2 B</a></li>
+                            <li class="dropdown-item" href="#"><a>Action 2 C</a></li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+                                    <li class="dropdown-item" href="#"><a>Action 2.1 A</a></li>
+                                    <li class="dropdown-item" href="#"><a>Action 2.1 B</a></li>
+                                    <li class="dropdown-item" href="#"><a>Action 2.1 C</a></li>
+                                    <li class="dropdown-item dropdown">
+                                        <a class="dropdown-toggle" id="dropdown2-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1.1</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1-1">
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.1 A</a></li>
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.1 B</a></li>
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.1 C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-item dropdown">
+                                        <a class="dropdown-toggle" id="dropdown2-1-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2.1.2</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1-2">
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.2 A</a></li>
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.2 B</a></li>
+                                            <li class="dropdown-item" href="#"><a>Action 2.1.2 C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <main role="main" class="container">
+
+
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1>Project Title</h1>
+                  
+                <div class="botón">
+                    <div class="fondo" x="0" y="0" width="200" height="200"></div>
+                    <div class="icono" width="200" height="200">
+                    <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                    <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                    </div>
+                    <div class="puntero"></div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <iframe id="iframe" src="Fieldbender_WebGL/" style="width: 100%; height: 100%; display: none;" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="container p-3">
+                <p class="lead">Description</p>
+                <p>
+                    This is a description of this Project.
+                    This is a description of this Project.
+                    This is a description of this Project.
+                    This is a description of this Project.
+                </p>    
+            </div>
+            <div class="container p-3">
+                <p class="lead">Devlog</p>
+                <p>
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                    This is a devlog of this Project.
+                </p>
+            </div>
+
+        </main>
+
+    </body>
+
+    <script src="script.js"></script>
 </html>
